@@ -1,19 +1,21 @@
-import { Provider } from "react-redux";
-import ReactDOM from "react-dom";
-import App from "./app";
-import store from './store/index'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
+import store from './store';
+import { Provider } from 'react-redux';
 
-const rootEl = document.getElementById("root");
-function Main() {
-    return (
-        <React.StrictMode>
-            <Provider store={store}>
-                <App />
-            </Provider>
-        </React.StrictMode>
-    )
-}
-// either <div> or <App />
-// ReactDOM.render(<div>hello</div>, rootEl);
-// instead of having <div>hello</div> we gonna put the App.js it will be like (replace line 2 with this)
-ReactDOM.render(<Main />, rootEl);
+ReactDOM.render(
+  <React.StrictMode>
+    <Provider store={store}>
+      <App />
+    </Provider>
+  </React.StrictMode>,
+  document.getElementById('root')
+);
+
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+reportWebVitals();

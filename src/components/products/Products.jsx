@@ -17,21 +17,21 @@ function Products(props) {
 
   return (
     <div>
-      {props.products.map((ele) => {
+      {props.products.map((prod) => {
         return (
-          <Card className={classes.root} key={ele.name}>
+          <Card className={classes.root} key={prod.name}>
             <CardActionArea>
               <CardMedia
                 className={classes.media}
-                image={ele.image}
-                title={ele.name}
+                image={`https://source.unsplash.com/random?${prod.name}&width=400`}
+                title={prod.name}
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="h2">
-                  {ele.name}
+                  {prod.name}
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
-                  {ele.inventoryCount} left
+                  {prod.inStock} left
                 </Typography>
               </CardContent>
             </CardActionArea>
