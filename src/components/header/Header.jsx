@@ -25,7 +25,7 @@ function Header() {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" className={classes.title}>
-           Mohammed's Store
+            Dahleh's Store
           </Typography>
         </Toolbar>
       </AppBar>

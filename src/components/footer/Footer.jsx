@@ -1,6 +1,7 @@
 import React from 'react';
 
 function Footer() {
-    return <footer> &copy; Mohammed Al-Dahleh 2022</footer>;
+  return <div>&copy; Mohammed Al-Dahleh 2022</div>;
 }
+
 export default Footer;
