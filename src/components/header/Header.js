@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import AddShoppingCartOutlinedIcont from '@material-ui/icons/AddShoppingCartOutlined';
 import StoreSharpIcon from '@material-ui/icons/StoreSharp';
 
+
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -38,7 +39,7 @@ function Header() {
             <Link to="/">
               <Button size="large" style={{ 'color': '#f1f1f1' }}>
                 <StoreSharpIcon />
-                Dahle's Store
+                Dahleh's Store
               </Button>
             </Link>
           </Typography>
