@@ -9,7 +9,7 @@ function Footer() {
         <Container maxWidth="md">
           <Toolbar>
             <Typography variant="body1" color="inherit">
-              &copy; Mohammed Al-Dahleh 2022
+              &copy; Dahleh 2021
             </Typography>
           </Toolbar>
         </Container>
