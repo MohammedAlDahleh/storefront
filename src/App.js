@@ -4,10 +4,12 @@ import Categories from './components/categories/Categories';
 import Products from './components/products/Products';
 import SimpleCart from './components/simpleCart/SimpleCart';
 import Cart from './components/cart/Cart';
+import ProductDetails from './components/products/ProductDetails';
 import { If } from 'react-if';
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { useSelector } from 'react-redux';
+
 
 function App(props) {
   const state = useSelector((state) => state);
@@ -23,7 +25,12 @@ function App(props) {
           </If>
         </Route>
         <Route exact path="/cart">
+          <SimpleCart />
           <Cart />
+        </Route>
+        <Route exact path="/product">
+          <SimpleCart />
+          <ProductDetails />
         </Route>
       </Switch>
       <Footer />
@@ -31,4 +38,4 @@ function App(props) {
   );
 }
 
-export default App;
+export default App

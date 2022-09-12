@@ -7,7 +7,7 @@ import './category.scss';
 
 function Categories() {
   const dispatcher = useDispatch();
-  const state = useSelector((state) => state);
+  const state = useSelector((state) => state.categories);
   const [value, setValue] = useState(false);
   const [name, setName] = useState('');
   const [description, setDescription] = useState('');
@@ -43,7 +43,7 @@ function Categories() {
           onChange={handleChange}
           aria-label="disabled tabs example"
         >
-          {state.categories.categoryList.map((elm) => {
+          {state.categoryList.map((elm) => {
             return (
               <Tab
                 key={elm.name}
